@@ -6,6 +6,8 @@ use App\Http\Controllers\EjemploController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Ejemplo3Controller;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +29,7 @@ Route::get('/serveis-web', [PaginasController::class, 'serveisweb']);
 Route::get('/formation-business-help', [PaginasController::class, 'fbh']);
 Route::get('/contacto', [PaginasController::class, 'contacto']);
 Route::get('/deportes', [DeportesController::class, 'index']);
+Route::get('/blade', [HomeController::class], 'index');
 
 
 // Route::get('/', function () {
